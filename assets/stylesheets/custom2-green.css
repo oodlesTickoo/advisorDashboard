@@ -104,7 +104,8 @@ body {
 }
 
 .page-content .boxes label {
-    font-size: 18px;
+    font-size: 18px;    
+	line-height: 25px;
 }
 
 .page-content .boxes .slider-div {
@@ -149,7 +150,7 @@ body {
 .heading-bg1{
     height: 100%;
     line-height: 38px;
-    background-color: #6d9b2e;
+    background-color: #92b6be;
     color:#f1f2ef;
 }
 
@@ -164,7 +165,7 @@ body {
 .heading-bg3{
     height: 100%;
     line-height: 38px;
-    background-color: #6d9b2e;
+    background-color: #92b6be;
     color:white;
 }
 
@@ -482,9 +483,9 @@ body {
 .assetAllocation-details .noUi-horizontal .noUi-handle {
     width: 20px;
     height: 20px;
-    background-color: #6d9b2e;
-    border: 3px solid #dbebc9;
-    box-shadow: 0 0 0 1pt #6d9b2e;
+    background-color: #92b6be;
+    border: 3px solid #dee6e8;
+    box-shadow: 0 0 0 1pt #92b6be;
 }
 
 .spouse-tell-us .noUi-horizontal .noUi-handle,
@@ -496,9 +497,9 @@ body {
 
     width: 20px;
     height: 20px;
-    background-color: #6d9b2e;
-    border: 3px solid #f2f5f6;
-    box-shadow: 0 0 0 1pt #6d9b2e;
+    background-color: #92b6be;
+    border: 3px solid #dee6e8;
+    box-shadow: 0 0 0 1pt #92b6be;
 }
 
 div .colorChange .noUi-horizontal .noUi-handle {
