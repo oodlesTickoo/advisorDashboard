@@ -391,6 +391,7 @@ a:visited {
     border-bottom: 2px solid #fff;
 }*/
 
+
 /*#navbar li a:hover::after {
     content: "";
     position: absolute;
@@ -399,6 +400,7 @@ a:visited {
     bottom: 0;
     border: 1px solid #fff;
 }*/
+
 #navbar li a:after {
     display: block;
     content: '';
@@ -406,9 +408,9 @@ a:visited {
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     transform-origin: 0% 50%;
-	left: 10px;
+    left: 10px;
     right: 50%;
-	position: absolute;
+    position: absolute;
 }
 
 #navbar li a:hover:after {
@@ -427,8 +429,8 @@ a:visited {
     font-size: 14px;
 }
 
-.menu-border-btn:after{
-	border-bottom: none !important;
+.menu-border-btn:after {
+    border-bottom: none !important;
 }
 
 .menu-border-btn:hover {
@@ -583,14 +585,25 @@ a:visited {
     padding-right: 30px;
 }
 
+.form-signin label {
+    min-height: 34px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 .form-signin .checkbox input[type=checkbox] {
     height: 18px;
 }
 
 .form-signin .checkbox span {
-    margin-top: 2px;
-    font-size: 12px;
+        /* margin-top: 4px; */
+    font-size: 13px;
     color: #000;
+    position: relative;
+    top: 7px;
+	font-family: LatoRegular;
 }
 
 .form-signin input[type=email],
