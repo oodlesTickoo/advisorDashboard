@@ -325,11 +325,11 @@ a:visited {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-filter: blur(7px);
+  /*  -webkit-filter: blur(7px);
     -moz-filter: blur(7px);
     -o-filter: blur(7px);
     -ms-filter: blur(7px);
-    filter: blur(7px);
+    filter: blur(7px);*/
 }
 
 
@@ -452,11 +452,11 @@ a:visited {
 
 .btn {
     font-weight: 700;
-    height: 36px;
+    height: 45px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    cursor: default;
+    cursor: pointer;
 }
 
 
@@ -615,17 +615,44 @@ a:visited {
 }
 
 .form-signin .form-group span {
-    position: absolute;
+   /* position: absolute;
     top: 9px;
     right: 10px;
     font-size: 15px;
-    color: #000;
+    color: #000;*/
+	    background-repeat: no-repeat;
+    width: 13px;
+    height: 15px;
+    display: inline-block;
+    /* top: 0; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
 }
 
+.form-signin .form-group span.name-icon {
+   background-image: url(../images/name-icon.png);
+}
+
+.form-signin .form-group span.dealer-group-icon {
+   background-image: url(../images/DelaerGroup-icon.png);
+}
+
+.form-signin .form-group span.mobile-icon {
+   background-image: url(../images/mobile-icon.png);
+}
+
+.form-signin .form-group span.email-icon {
+   background-image: url(../images/email-icon.png);
+}
+
+/*
 .form-signin .form-group span.fa-mobile {
     font-size: 25px;
     top: 5px;
 }
+*/
 
 .form-signin input {
     direction: ltr;
@@ -743,55 +770,6 @@ a:visited {
     text-transform: uppercase;
     text-shadow: 0 0 0 #060d1a;
     margin-bottom: 27px;
-}
-
-.footer-nav img {
-    max-width: 100%;
-    margin-bottom: 42px;
-}
-
-.social-icons li {
-    display: inline-block;
-    /*    float: left;*/
-    margin-right: 10px;
-}
-
-.social-icons li a {
-    background: url("../images/social_icons.png") no-repeat;
-    height: 33px;
-    width: 33px;
-    display: block;
-}
-
-.social-icons li.googleplus-icon a {
-    background-position: -44px 0;
-}
-
-.social-icons li.twiiter-icon a {
-    background-position: -88px 0;
-}
-
-.social-icons li.youtube-icon a {
-    background-position: -132px 0;
-}
-
-.social-icons li.linkedin-icon a {
-    background-position: -176px 0;
-}
-
-.navigation {
-    padding-left: 50px;
-}
-
-.navigation h4 {
-    line-height: normal;
-    padding-left: 15px;
-    margin-bottom: 48px;
-}
-
-.contact h4 {
-    line-height: normal;
-    margin-bottom: 48px;
 }
 
 .footer-nav ul.navigation li a {

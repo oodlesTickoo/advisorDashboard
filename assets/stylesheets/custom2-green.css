@@ -139,8 +139,12 @@ body {
 .heading-bg{
     padding-left: 0px;
     padding-right: 0px;
-    background: #565656;;
+    background: #228da5;;
     
+}
+
+.super-calc{
+	border: 1px solid #228da5;
 }
 
 .contents{
@@ -150,7 +154,7 @@ body {
 .heading-bg1{
     height: 100%;
     line-height: 38px;
-    background-color: #92b6be;
+    background-color: #fff;
     color:#f1f2ef;
 }
 
@@ -159,13 +163,15 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: inherit;
-    font-size: 24px;
+	font-size: 20px;
+    font-family: LatoRegular;   
+	color: #565656;
 }
 
 .heading-bg3{
     height: 100%;
     line-height: 38px;
-    background-color: #92b6be;
+    background-color: #fff;
     color:white;
 }
 
@@ -722,11 +728,6 @@ input:-webkit-autofill {
     }
 }
 
-body,
-html {
-    height: 100%;
-}
-
 .bodywrapper {
     overflow: auto;
     height: 100%;
@@ -745,7 +746,7 @@ html {
 
 body {
     /*padding-top: 50px;*/
-    padding-bottom: 50px;
+/*    padding-bottom: 50px;*/
 }
 
 
