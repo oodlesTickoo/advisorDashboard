@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/lato-light.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/lato-regular.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/lato-semibold.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/avant-grade.css" />
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />-->
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/owl.carousel.css" /> -->
 
     <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
@@ -70,22 +71,22 @@
                     <form class="form-signin">
                         <div class="form-group">
                             <input type="text" id="inputName" class="form-control" placeholder="Name" required>
-<!--                            <span class="fa fa-user-o"></span>-->
+                            <!--                            <span class="fa fa-user-o"></span>-->
                             <span class="name-icon"></span>
                         </div>
                         <div class="form-group">
                             <input type="text" id="inputDealer" class="form-control" placeholder="Dealer Group" required>
-<!--                            <span class="fa fa-group"></span>-->
+                            <!--                            <span class="fa fa-group"></span>-->
                             <span class="dealer-group-icon"></span>
                         </div>
                         <div class="form-group">
                             <input type="text" id="inputMobile" class="form-control" placeholder="Mobile Phone" required>
-<!--                            <span class="fa fa-mobile fa-6"></span>-->
+                            <!--                            <span class="fa fa-mobile fa-6"></span>-->
                             <span class="mobile-icon"></span>
                         </div>
                         <div class="form-group">
                             <input type="email" id="inputEmail" class="form-control" placeholder="Email Id" required>
-<!--                            <span class="fa fa-envelope-o"></span>-->
+                            <!--                            <span class="fa fa-envelope-o"></span>-->
                             <span class="email-icon"></span>
                         </div>
                         <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Log in</button>
@@ -101,18 +102,18 @@
                     <form class="form-signin">
                         <div class="form-group">
                             <input type="text" id="inputName" class="form-control" placeholder="Name" required>
-<!--                            <span class="fa fa-user-o"></span>-->
+                            <!--                            <span class="fa fa-user-o"></span>-->
                             <span class="name-icon"></span>
                         </div>
                         <div class="form-group">
                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-<!--                            <span class="fa fa-envelope-o"></span>-->
-							
+                            <!--                            <span class="fa fa-envelope-o"></span>-->
+
                             <span class="email-icon"></span>
                         </div>
                         <div class="form-group">
                             <input type="text" id="inputMobile" class="form-control" placeholder="Mobile Phone" required>
-<!--                            <span class="fa fa-mobile"></span>-->
+                            <!--                            <span class="fa fa-mobile"></span>-->
                             <span class="mobile-icon"></span>
                         </div>
                         <div id="financialAdvisor" class="checkbox">
@@ -132,7 +133,8 @@
             <div class="row page-content" id="inputs">
                 <div class="col-xs-12 col-sm-12">
                     <div class="row" style="padding-left: 20%;padding-right: 20%;text-align: left; text-transform: uppercase; font-family: LatoRegular;padding-top: 2%;">
-                        <h1 style="font-size: 40px;">Super Calculator</h1>
+                        <h1 style="font-size: 40px;">General Advisor Calculator</h1>
+                        <p>Use this calculator to analyse your overall financial position. This will assist your advisor to generate a statement of advice.</p>
                     </div>
                     <form class="ttrForm" name="forms.ttrForm" ng-submit="calculatePdf();" novalidate>
                         <div class="row boxes tell-us" id="tell-us">
@@ -218,6 +220,85 @@
                                                 <p class="err-msg">Enter a valid 4-Digit postal code</p>
                                             </div>
                                         </div>
+                                        <!--<div class="form-group row">
+                                            <label for="select-spouse-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
+                                                Do You Have A Spouse</label>
+                                            <div class="col-xs-6 col-sm-4 col-md-4">
+                                                <select class="selectpicker" id="select-spouse-option" title="Choose An Option">
+                                                    <option value="0">Yes</option>
+                                                    <option value="1" selected>No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
+                                                Your health.</label>
+                                            <div class="col-xs-6 col-sm-4 col-md-4">
+                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                    <option value="0" selected>Excellent</option>
+                                                    <option value="1">Good</option>
+                                                    <option value="2">Poor</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
+                                                Any family history of disease</label>
+                                            <div class="col-xs-6 col-sm-4 col-md-4">
+                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                    <option value="0" selected>Yes</option>
+                                                    <option value="1">None</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
+                                                What hospital cover do you have? (Private)</label>
+                                            <div class="col-xs-6 col-sm-4 col-md-4">
+                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                    <option value="0" selected>Full Cover</option>
+                                                    <option value="1">Partial cover</option>
+                                                    <option value="1">None</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
+                                                Do you have a will?</label>
+                                            <div class="col-xs-6 col-sm-4 col-md-4">
+                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                    <option value="0" selected>Yes</option>
+                                                    <option value="1">No</option>
+                                                </select>
+                                            </div>
+                                        </div>-->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <button class="next-btn" type="button" ng-click="event.preventDefault();nextDiv(1)">
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row boxes personal-details" id="personal-details-div">
+                            <div class="col-sm-12 col-xs-12">
+                                <div class="row super-calc" ng-click="menuDrop12();">
+                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                        <img src="assets/images/user.svg" style="width: 27px;" class="hollow-icon-heading" alt="Kiwi standing on oval">
+                                    </div>
+                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                        <h2 class="contents1">Personal Details :</h2>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                        <img src="assets/images/upload.svg" id="upload" class="hollow-icon" alt="Kiwi standing on oval">
+                                        <img src="assets/images/download.svg" id="download" style="display: none; " class="hollow-icon" alt="Kiwi standing on oval">
+                                    </div>
+                                </div>
+                                <div class="row form-1" ng-class="{menuDrop: isMenuDrop12}">
+                                    <div class="col-sm-10  col-sm-offset-2 contents">
                                         <div class="form-group row">
                                             <label for="select-spouse-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
                                                 Do You Have A Spouse</label>
@@ -272,7 +353,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <button class="next-btn" type="button" ng-click="event.preventDefault();nextDiv(1)">
+                                                <button class="next-btn" type="button" ng-click="event.preventDefault();nextDiv(12)">
                                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -3229,19 +3310,16 @@
                 <!--/main-container -->
                 <!-- JAVASCRIPTS -->
                 <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                <!--                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
                 <script src="https://use.fontawesome.com/ddac04c5c3.js"></script>
                 <script src="assets/javascripts/angular.min.js" type="text/javascript"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.0.16/jspdf.plugin.autotable.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta1/html2canvas.js"></script>
-
                 <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-                <script src="assets/javascripts/scripts.js" type="text/javascript"></script>
-
-                <script src="assets/javascripts/bootstrap-select.min.js" type="text/javascript"></script>
-                <script src="assets/javascripts/ui-bootstrap-tpls-1.3.3.min.js" type="text/javascript"></script>
                 <script src="assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+                <script src="assets/javascripts/ui-bootstrap-tpls-1.3.3.min.js" type="text/javascript"></script>
+                <script src="assets/javascripts/bootstrap-select.min.js" type="text/javascript"></script>
                 <script src="assets/javascripts/app.js" type="text/javascript"></script>
                 <script>
                     $(document).ready(function() {
@@ -3321,37 +3399,68 @@
         <div class="footer-nav">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 co">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col">
+						<a href="#"><img src="assets/images/Footer_Logo.png"></a>
                         <ul class="contact">
-                            <h4>Contact Us</h4>
                             <li>
-                                <p class="bold no-margin">Address</p>
+								<i class="footer-icon location-icon"></i>
                                 <p class="no-margin">Level 20, 28 Freshwater Place</p>
                                 <p>Southbank VIC Australia 3006</p>
                             </li>
                             <li>
-                                <p class="bold no-margin">Phone No</p>
+								<i class="footer-icon phone-icon"></i>
                                 <p>+61 3 9606 9677</p>
                             </li>
                             <li>
-                                <p class="bold no-margin">Email</p>
+								<i class="footer-icon mail-icon"></i>
                                 <p>hello@gmail.com</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col">
-                        <ul>
-                        <h4>Calculators</h4>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">T&C</a></li>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col">
+                        <ul class="calc-section">
+                            <h4>Calculators</h4>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col">
+                        <ul class="calc-section calc-list-name">
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                        </ul>
+                    </div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col">
+                        <ul class="calc-section calc-list-name">
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
+                            <li>
+                                <p>Super Calculators</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-<!--
+        <!--
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">

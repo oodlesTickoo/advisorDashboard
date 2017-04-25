@@ -55,7 +55,7 @@ body {
 }
 */
 
-.form-1,.form-2,.form-3,.form-4,.form-5,.form-6,.form-7,.form-8,.form-9,.form-10,.form-11{
+.form-1,.form-2,.form-3,.form-4,.form-5,.form-6,.form-7,.form-8,.form-9,.form-10,.form-11,.form-12{
   -webkit-transition: max-height 0.9s ease-in;
   -o-transition: max-height 0.9s ease-in;
   -moz-transition: max-height 0.9s ease-in;    
@@ -187,6 +187,7 @@ body {
 }
 
 .page-content .tell-us,
+.page-content .personal-details,
 .page-content .account-details,
 .page-content .assets-details,
 .page-content .otherExpense-details,
@@ -223,12 +224,11 @@ body {
     margin-top: 20px;
     font-family: LatoRegular;
     background: white;
-    color: #565656;
+    color: #228da5;
     border-radius: 23px;
-    border: 2px solid #565656;
+    border: 2px solid #228da5;
     height: 36px;
     padding: 6px 18px;
-    border: 2px solid #565656 !important;
     text-transform: none;
     height: auto;
 
@@ -246,7 +246,7 @@ body {
 
 .submit-button:active ,
 .submit-button:hover {
-    background: #565656;
+    background: #228da5;
     color:#f1f2ef;
     border-radius: 23px;
 

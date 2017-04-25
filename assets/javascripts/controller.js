@@ -2325,6 +2325,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.isMenuDrop9 = true;
     $scope.isMenuDrop10 = true;
     $scope.isMenuDrop11 = true;
+    $scope.isMenuDrop12 = true;
 
     $scope.next1 = false;
     $scope.next2 = false;
@@ -2336,6 +2337,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.next8 = false;
     $scope.next9 = false;
     $scope.next10 = false;
+    $scope.next12 = false;
 
     $scope.menuDrop1 = function() {
         $scope.isMenuDrop1 = $scope.isMenuDrop1 ? false : true;
@@ -2370,10 +2372,18 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.menuDrop11 = function() {
         $scope.isMenuDrop11 = $scope.isMenuDrop11 ? false : true;
     }
+	$scope.menuDrop12 = function() {
+        $scope.isMenuDrop12 = $scope.isMenuDrop12 ? false : true;
+    }
 
 
     $(".form-1").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
-        if ($scope.spouseOption) {
+		if ($scope.isMenuDrop1 && $scope.next1) {
+            $scope.isMenuDrop12 = false;
+            $timeout(0);
+            $scope.next1 = false;
+        }
+        /*if ($scope.spouseOption) {
             if ($scope.isMenuDrop1 && $scope.next1) {
                 $scope.isMenuDrop2 = false;
                 $timeout(0);
@@ -2385,7 +2395,27 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
                 $timeout(0);
                 $scope.next1 = false;
             }
+        }*/
+    });
+	$(".form-12").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
+		if ($scope.spouseOption) {
+            if ($scope.isMenuDrop12 && $scope.next12) {
+                $scope.isMenuDrop2 = false;
+                $timeout(0);
+                $scope.next12 = false;
+            }
+        } else {
+            if ($scope.isMenuDrop12 && $scope.next12) {
+                $scope.isMenuDrop3 = false;
+                $timeout(0);
+                $scope.next12 = false;
+            }
         }
+       /* if ($scope.isMenuDrop10 && $scope.next10) {
+            $scope.isMenuDrop11 = false;
+            $timeout(0);
+            $scope.next10 = false;
+        }*/
     });
     $(".form-2").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
         if ($scope.isMenuDrop2 && $scope.next2) {
@@ -2458,6 +2488,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
             $scope.next10 = false;
         }
     });
+	
 
 
 
@@ -2507,7 +2538,11 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
                 break;
             case 11:
                 $scope.isMenuDrop11 = true;
-
+				break;
+ 			case 12:
+//                $scope.isMenuDrop11 = true;
+			  	$scope.isMenuDrop12 = true;
+                $scope.next12 = true;
         }
     }
 
