@@ -119,7 +119,7 @@
                         <div id="financialAdvisor" class="checkbox">
                             <!--<input type="checkbox" name="financial" value="financial-advisor" id="financial-advisor_id">
                             <label for="adventure-advisor_id">Do you have a Financial Advisor</label>-->
-                             <label>
+                            <label>
                                 <input type="checkbox" value="financial-advisor">
                                 <span>Do you have a Financial Advisor</span>
                             </label>
@@ -142,138 +142,144 @@
                         <div class="row boxes tell-us" id="tell-us">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop1();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/user.svg" style="width: 27px;" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Tell Us About Yourself :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" style="display: none; " class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
                                 </div>
                                 <div class="row form-1" ng-class="{menuDrop: isMenuDrop1}">
-                                    <div class="col-sm-10  col-sm-offset-2 contents">
-                                        <div class="form-group row">
-                                            <label for="first-name" class="col-xs-6 col-sm-4 col-md-4 col-form-label">First Name *</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <input type="text" class="form-control" name="firstName" ng-model="personalDetails.firstName" id="first-name" placeholder="First Name" ng-pattern="/^[a-zA-Z\s]*$/" required>
-                                            </div>
-                                            <div class=" col-xs-6 col-sm-4 col-md-4 err-div" ng-show="!forms.ttrForm.firstName.$pristine && forms.ttrForm.firstName.$invalid">
-                                                <p class="err-msg">Please provide a valid first name.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="last-name" class="col-xs-6 col-sm-4 col-md-4 col-form-label">Last Name *</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <input type="text" class="form-control" name="lastName" id="last-name" placeholder="Last Name" ng-model="personalDetails.lastName" ng-pattern="/^[a-zA-Z\s]*$/" required>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-4 col-md-4 err-div" ng-show="!forms.ttrForm.lastName.$pristine && forms.ttrForm.lastName.$invalid">
-                                                <p class="err-msg">Please provide a valid last name.</p>
-                                            </div>
-                                        </div>
+                                    <div class="col-sm-11 col-sm-offset-1 contents">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group row">
+                                                    <label for="first-name" class="col-xs-6 col-sm-4 col-md-6 col-form-label">First Name *</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <input type="text" class="form-control" name="firstName" ng-model="personalDetails.firstName" id="first-name" placeholder="First Name" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-4 col-md-12 err-div" ng-show="!forms.ttrForm.firstName.$pristine && forms.ttrForm.firstName.$invalid">
+                                                        <p class="err-msg">Please provide a valid first name.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="last-name" class="col-xs-6 col-sm-4 col-md-6 col-form-label">Last Name *</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <input type="text" class="form-control" name="lastName" id="last-name" placeholder="Last Name" ng-model="personalDetails.lastName" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-4 col-md-12 err-div" ng-show="!forms.ttrForm.lastName.$pristine && forms.ttrForm.lastName.$invalid">
+                                                        <p class="err-msg">Please provide a valid last name.</p>
+                                                    </div>
+                                                </div>
 
-                                        <div class="form-group row">
-                                            <label for="select-gender-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                Gender</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-gender-option" title="Choose An Option">
-                                                    <option value="0" selected>Male</option>
-                                                    <option value="1">Female</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="dob" class="col-xs-6 col-sm-4 col-md-4 col-form-label">Date Of Birth</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <div class="input-group">
-                                                    <input type="text" name="dob" id="dobText" onClick="this.select();" class="standard-input form-control dob-input" show-button-bar="false" uib-datepicker-popup="{{format}}" ng-model="dob" is-open="popup1.opened" datepicker-options="dateOptions" required close-text="Close" ng-blur="ageChange()" />
-                                                    <span class="input-group-addon" ng-click="open1()">
+                                                <div class="form-group row">
+                                                    <label for="select-gender-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        Gender</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-gender-option" title="Choose An Option">
+                                                            <option value="0" selected>Male</option>
+                                                            <option value="1">Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="dob" class="col-xs-6 col-sm-4 col-md-6 col-form-label">Date Of Birth</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <div class="input-group">
+                                                            <input type="text" name="dob" id="dobText" onClick="this.select();" class="standard-input form-control dob-input" show-button-bar="false" uib-datepicker-popup="{{format}}" ng-model="dob" is-open="popup1.opened" datepicker-options="dateOptions" required close-text="Close" ng-blur="ageChange()" />
+                                                            <span class="input-group-addon" ng-click="open1()">
                                              <span class="glyphicon glyphicon-calendar"></span>
-                                                    </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="email" class="col-xs-6 col-sm-4 col-md-6 col-form-label">Email Address *</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="personalDetails.email" required>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-4 col-md-12 err-div" ng-show="(!forms.ttrForm.email.$pristine && forms.ttrForm.email.$invalid)">
+                                                        <p class="err-msg">Enter a valid email address</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="mobile-num" class="col-xs-6 col-sm-4 col-md-6 col-form-label">Mobile Number *</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <input type="number" class="form-control mob-input" id="mobile-num" placeholder="mobile" ng-model="personalDetails.mobile" name="mobile" ng-pattern="/^(04)\d{8}$/g" required>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-4 col-md-12 err-div" ng-show="(!forms.ttrForm.mobile.$pristine && forms.ttrForm.mobile.$invalid)">
+                                                        <p class="err-msg">Enter a valid mobile number</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label for="postal-code" class="col-xs-6 col-sm-4 col-md-6 col-form-label">Postal Code </label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <input type="number" ng-minlength="4" ng-maxlength="4" class="form-control postal-code" id="postal-code" name="postalCode" ng-model="personalDetails.postalCode" placeholder="Postal Code">
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-4 col-md-12 err-div" ng-show="!forms.ttrForm.postalCode.$pristine &&forms.ttrForm.postalCode.$invalid">
+                                                        <p class="err-msg">Enter a valid 4-Digit postal code</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="select-spouse-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        Do You Have A Spouse</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-spouse-option" title="Choose An Option">
+                                                            <option value="0">Yes</option>
+                                                            <option value="1" selected>No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        Your health.</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                            <option value="0" selected>Excellent</option>
+                                                            <option value="1">Good</option>
+                                                            <option value="2">Poor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        Any family history of disease</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                            <option value="0" selected>Yes</option>
+                                                            <option value="1">None</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        What hospital cover do you have? (Private)</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                            <option value="0" selected>Full Cover</option>
+                                                            <option value="1">Partial cover</option>
+                                                            <option value="1">None</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-6 col-form-label">
+                                                        Do you have a will?</label>
+                                                    <div class="col-xs-6 col-sm-4 col-md-6">
+                                                        <select class="selectpicker" id="select-house-option" title="Choose An Option">
+                                                            <option value="0" selected>Yes</option>
+                                                            <option value="1">No</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="email" class="col-xs-6 col-sm-4 col-md-4 col-form-label">Email Address *</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="personalDetails.email" required>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-4 col-md-4 err-div" ng-show="(!forms.ttrForm.email.$pristine && forms.ttrForm.email.$invalid)">
-                                                <p class="err-msg">Enter a valid email address</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="mobile-num" class="col-xs-6 col-sm-4 col-md-4 col-form-label">Mobile Number *</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <input type="number" class="form-control mob-input" id="mobile-num" placeholder="mobile" ng-model="personalDetails.mobile" name="mobile" ng-pattern="/^(04)\d{8}$/g" required>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-4 col-md-4 err-div" ng-show="(!forms.ttrForm.mobile.$pristine && forms.ttrForm.mobile.$invalid)">
-                                                <p class="err-msg">Enter a valid mobile number</p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="postal-code" class="col-xs-6 col-sm-4 col-md-4 col-form-label">Postal Code </label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <input type="number" ng-minlength="4" ng-maxlength="4" class="form-control postal-code" id="postal-code" name="postalCode" ng-model="personalDetails.postalCode" placeholder="Postal Code">
-                                            </div>
-                                            <div class="col-xs-6 col-sm-4 col-md-4 err-div" ng-show="!forms.ttrForm.postalCode.$pristine &&forms.ttrForm.postalCode.$invalid">
-                                                <p class="err-msg">Enter a valid 4-Digit postal code</p>
-                                            </div>
-                                        </div>
-                                        <!--<div class="form-group row">
-                                            <label for="select-spouse-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                Do You Have A Spouse</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-spouse-option" title="Choose An Option">
-                                                    <option value="0">Yes</option>
-                                                    <option value="1" selected>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                Your health.</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
-                                                    <option value="0" selected>Excellent</option>
-                                                    <option value="1">Good</option>
-                                                    <option value="2">Poor</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                Any family history of disease</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
-                                                    <option value="0" selected>Yes</option>
-                                                    <option value="1">None</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                What hospital cover do you have? (Private)</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
-                                                    <option value="0" selected>Full Cover</option>
-                                                    <option value="1">Partial cover</option>
-                                                    <option value="1">None</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="select-house-option" class="col-xs-6 col-sm-4 col-md-4 col-form-label">
-                                                Do you have a will?</label>
-                                            <div class="col-xs-6 col-sm-4 col-md-4">
-                                                <select class="selectpicker" id="select-house-option" title="Choose An Option">
-                                                    <option value="0" selected>Yes</option>
-                                                    <option value="1">No</option>
-                                                </select>
-                                            </div>
-                                        </div>-->
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <button class="next-btn" type="button" ng-click="event.preventDefault();nextDiv(1)">
@@ -285,16 +291,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row boxes personal-details" id="personal-details-div">
+                        <!--<div class="row boxes personal-details" id="personal-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop12();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/user.svg" style="width: 27px;" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Personal Details :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" style="display: none; " class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -363,17 +369,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="row boxes spouse-tell-us" ng-show="spouseOption">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc super-calc" ng-click="menuDrop2();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/user.svg" style="width: 27px;" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1">
                                         <h2 class="contents1">Tell Us About Your spouse :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -443,13 +449,13 @@
                         <div class="row boxes account-details" id="account-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop3();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/busines-card.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1">
                                         <h2 class="contents1">Your Account Details :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -717,13 +723,13 @@
                         <div class="row boxes spouse-account-details" ng-show="spouseOption">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop4();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/busines-card.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1">
                                         <h2 class="contents1">Spouse's Account Details :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -915,13 +921,13 @@
                         <div class="row boxes assets-details" id="assets-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop5();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/money-bag.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Assets :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1078,13 +1084,13 @@
                         <div class="row boxes liability-details" id="liability-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop6();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/credit-card.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Liability :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1165,13 +1171,13 @@
                         <div class="row boxes otherExpense-details" id="otherExpense-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop7();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/price-tag.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Other Expense :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1350,13 +1356,13 @@
                         <div class="row boxes existingCover-details" id="existingCover-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop8();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/life-insurence.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Existing Cover :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1427,13 +1433,13 @@
                         <div class="row boxes other-assets" id="other-assets-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop9();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/invest-money.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Other Assets :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1604,13 +1610,13 @@
                         <div class="row boxes optimisationTTR-details" id="optimisationTTR-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop10();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/funds.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Optimisation of TTR Pension :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>
@@ -1674,13 +1680,13 @@
                         <div class="row boxes assetAllocation-details" id="assetAllocation-details-div">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="row super-calc" ng-click="menuDrop11();">
-                                    <div class="col-sm-1 col-xs-1 heading-bg">
+                                    <div class="col-sm-2 col-xs-2 heading-bg">
                                         <img src="assets/images/three-stacks-of-coins.svg" class="hollow-icon-heading" alt="Kiwi standing on oval">
                                     </div>
-                                    <div class="col-sm-10 col-xs-10 heading-bg1 ">
+                                    <div class="col-sm-8 col-xs-8 heading-bg1 ">
                                         <h2 class="contents1">Asset Allocation details :</h2>
                                     </div>
-                                    <div class="col-sm-1 col-xs-1 heading-bg3">
+                                    <div class="col-sm-2 col-xs-2 heading-bg3">
                                         <img src="assets/images/upload.svg" id="upload" style="display: none;" class="hollow-icon" alt="Kiwi standing on oval">
                                         <img src="assets/images/download.svg" id="download" class="hollow-icon" alt="Kiwi standing on oval">
                                     </div>

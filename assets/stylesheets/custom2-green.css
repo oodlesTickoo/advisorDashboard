@@ -55,6 +55,10 @@ body {
 }
 */
 
+.glyphicon-calendar:before{
+	color: #228da5;
+}
+
 .form-1,.form-2,.form-3,.form-4,.form-5,.form-6,.form-7,.form-8,.form-9,.form-10,.form-11,.form-12{
   -webkit-transition: max-height 0.9s ease-in;
   -o-transition: max-height 0.9s ease-in;
@@ -82,8 +86,8 @@ body {
     color: #f1f2ef;
     border:1px solid #f1f2ef ;
     background-color: #f1f2ef;
-    border: 2px solid #565656;
-    color: #565656;
+    border: 2px solid #228da5;
+    color: #228da5;
 }
 
 .tumy{
@@ -92,20 +96,21 @@ body {
     height: 80px;
 }
 .next-btn:hover{
-    background-color: #565656; 
+    background-color: #228da5; 
      color: #f1f2ef; 
      border: none; 
 }
 .boxes label {
-    /*font-size:16px;*/
+    font-size:14px;
     font-weight: 500;
     position: relative;
     top:4px;
 }
 
 .page-content .boxes label {
-    font-size: 18px;    
-	line-height: 25px;
+    font-size: 14px;    
+	line-height: 18px;
+	font-family: LatoRegular;
 }
 
 .page-content .boxes .slider-div {
@@ -119,6 +124,7 @@ body {
     color: #003946;
     padding-left: 11px;
     font-size: 18px;
+	    width: 129px;
 }
 
 .page-content .boxes .bootstrap-select ul.dropdown-menu span.text {
@@ -159,13 +165,13 @@ body {
 }
 
 .heading-bg1 h2{
-    vertical-align: middle;
+  	vertical-align: middle;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: inherit;
-	font-size: 20px;
-    font-family: LatoRegular;   
-	color: #565656;
+    font-size: 20px;
+    font-family: LatoSemiBold;
+    color: #3c3c3c;
 }
 
 .heading-bg3{
@@ -261,7 +267,7 @@ body {
 .page-content .liability-details input,
 .page-content .existingCover-details input,
 .page-content .optimisationTTR-details input {
-    text-align: right;
+/*    text-align: right;*/
     font-weight: bold;
     color: #003946;
     font-size: 18px;
@@ -270,7 +276,7 @@ body {
 }
 
 .result-content .display-table input {
-    text-align: right;
+/*    text-align: right;*/
     font-weight: bold;
     color: #003946;
     font-size: 18px;
@@ -281,7 +287,7 @@ body {
 
 .page-content .tell-us input,
 .page-content .spouse-tell-us input {
-    text-align: right;
+/*    text-align: right;*/
     font-weight: bold;
     color: #003946;
     font-size: 18px;
@@ -334,7 +340,13 @@ body {
 .ttrForm .bootstrap-select .btn,
 .ttrForm .input-group-addon {
     border-radius: 8px;
-        
+	height: 30px;
+    font-size: 14px !important;
+	    width: 129px;
+}
+
+.ttrForm input.form-control.dob-input{
+	width: 90px;
 }
 
 .input-group-addon{
@@ -487,11 +499,11 @@ body {
 .other-assets .noUi-horizontal .noUi-handle,
 .otherExpense-details .noUi-horizontal .noUi-handle,
 .assetAllocation-details .noUi-horizontal .noUi-handle {
-    width: 20px;
+   	width: 20px;
     height: 20px;
-    background-color: #92b6be;
+    background-color: #228da5;
     border: 3px solid #dee6e8;
-    box-shadow: 0 0 0 1pt #92b6be;
+    box-shadow: 0 0 0 1pt #228da5;
 }
 
 .spouse-tell-us .noUi-horizontal .noUi-handle,
@@ -565,11 +577,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 p.err-msg {
-    background-color: #a4383d;
-    font-size: 16px;
-    padding: 5px 5px;
+/*    font-size: 16px;*/
+    padding: 5px 0px;
     margin: 0px;
-    color: #fff;
+    text-transform: initial !important;
+/*    color: #fff;*/
 }
 
 input:-webkit-autofill {
