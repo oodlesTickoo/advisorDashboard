@@ -228,6 +228,10 @@
     .no-border {
         border: none !important;
     }
+    
+    .bold {
+        font-weight: bold !important;
+    }
     /* -- Heading -- */
     
     .heading h2 {

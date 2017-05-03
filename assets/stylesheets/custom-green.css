@@ -353,7 +353,7 @@
 .otherExpense-details .form-group>div:nth-child(3),
 .existingCover-details .form-group>div:nth-child(3),
 .assumptions-details .form-group>div:nth-child(3) {
-    padding-left: 30px;
+/*    padding-left: 30px;*/
 }
 
 .assets-details .form-group>div:nth-child(2),

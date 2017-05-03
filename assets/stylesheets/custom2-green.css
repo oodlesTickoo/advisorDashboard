@@ -64,7 +64,7 @@ body {
   -o-transition: max-height 0.9s ease-in;
   -moz-transition: max-height 0.9s ease-in;    
   transition: max-height 0.9s ease-in;
-  max-height: 1600px;
+  max-height: 1950px;
   overflow: hidden;
 
     
@@ -108,7 +108,7 @@ body {
 }
 
 .page-content .boxes label {
-    font-size: 14px;    
+    font-size: 13px;    
 	line-height: 18px;
 	font-family: LatoRegular;
 }
@@ -117,6 +117,11 @@ body {
     position: relative;
     top:14px;
     border-radius: 10px; */
+}
+
+/*hide sliders*/
+.slider-col{
+	display: none;
 }
 
 .page-content .boxes .bootstrap-select .btn {
@@ -155,6 +160,19 @@ body {
 
 .contents{
         padding-top: 15px;
+}
+
+.contents > .row{
+	margin-left: 15px;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.contents > .row{
+	margin-left: -15px;
+}
 }
 
 .heading-bg1{
@@ -333,7 +351,8 @@ body {
 .page-content .existingCover-details h4,
 .page-content .optimisationTTR-details h4 {
     font-weight: bold;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
+    text-transform: capitalize;
 }
 
 .ttrForm input.form-control,
@@ -341,12 +360,16 @@ body {
 .ttrForm .input-group-addon {
     border-radius: 8px;
 	height: 30px;
-    font-size: 14px !important;
+    font-size: 13px !important;
 	    width: 129px;
 }
 
 .ttrForm input.form-control.dob-input{
 	width: 90px;
+}
+
+.ttrForm .dob-input-group .input-group-addon{
+	width: 39px;
 }
 
 .input-group-addon{

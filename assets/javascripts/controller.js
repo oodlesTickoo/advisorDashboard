@@ -2315,7 +2315,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     });
 
     $scope.isMenuDrop1 = false;
-    $scope.isMenuDrop2 = true;
+//    $scope.isMenuDrop2 = true;
     $scope.isMenuDrop3 = true;
     $scope.isMenuDrop4 = true;
     $scope.isMenuDrop5 = true;
@@ -2328,7 +2328,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 //    $scope.isMenuDrop12 = true;
 
     $scope.next1 = false;
-    $scope.next2 = false;
+//    $scope.next2 = false;
     $scope.next3 = false;
     $scope.next4 = false;
     $scope.next5 = false;
@@ -2342,9 +2342,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.menuDrop1 = function() {
         $scope.isMenuDrop1 = $scope.isMenuDrop1 ? false : true;
     }
-    $scope.menuDrop2 = function() {
+    /*$scope.menuDrop2 = function() {
         $scope.isMenuDrop2 = $scope.isMenuDrop2 ? false : true;
-    }
+    }*/
     $scope.menuDrop3 = function() {
         $scope.isMenuDrop3 = $scope.isMenuDrop3 ? false : true;
     }
@@ -2378,12 +2378,12 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
 
     $(".form-1").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
-		/*if ($scope.isMenuDrop1 && $scope.next1) {
-            $scope.isMenuDrop12 = false;
+		if ($scope.isMenuDrop1 && $scope.next1) {
+            $scope.isMenuDrop3 = false;
             $timeout(0);
             $scope.next1 = false;
-        }*/
-        if ($scope.spouseOption) {
+        }
+        /*if ($scope.spouseOption) {
             if ($scope.isMenuDrop1 && $scope.next1) {
                 $scope.isMenuDrop2 = false;
                 $timeout(0);
@@ -2395,15 +2395,15 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
                 $timeout(0);
                 $scope.next1 = false;
             }
-        }
+        }*/
     });
-    $(".form-2").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
+    /*$(".form-2").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
         if ($scope.isMenuDrop2 && $scope.next2) {
             $scope.isMenuDrop3 = false;
             $timeout(0);
             $scope.next2 = false;
         }
-    });
+    });*/
     $(".form-3").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
         if ($scope.spouseOption) {
             if ($scope.isMenuDrop3 && $scope.next3) {
