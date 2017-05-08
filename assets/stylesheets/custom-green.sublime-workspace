@@ -1,0 +1,925 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"consol",
+				"console.log(\"q\t(controller.js)"
+			],
+			[
+				"maj",
+				"majorFeesArray"
+			],
+			[
+				"spMajo",
+				"spMajor1\t(index.html)"
+			],
+			[
+				"console",
+				"console.log(\"q"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"ym",
+				"ymm\t(index.html)"
+			],
+			[
+				"spli",
+				"splitTitle35"
+			],
+			[
+				"arra",
+				"array5"
+			],
+			[
+				"Dea",
+				"Details"
+			],
+			[
+				"Per",
+				"Personal"
+			],
+			[
+				"wid",
+				"width1"
+			],
+			[
+				"h",
+				"height1"
+			],
+			[
+				"wi",
+				"width1"
+			],
+			[
+				"inve",
+				"investOptions"
+			],
+			[
+				"inv",
+				"investOptions"
+			],
+			[
+				"invest",
+				"investOptions\t(index.html)"
+			],
+			[
+				"cons",
+				"console.log"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"be",
+				"begngInvstmntPrd"
+			],
+			[
+				"imp",
+				"important\t(custom2-green.css)"
+			],
+			[
+				"ret",
+				"retirementAge"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"container",
+				"containerImage\t(index.html)"
+			],
+			[
+				"backgroundc",
+				"background-color"
+			],
+			[
+				"displ",
+				"display"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"display",
+				"display-table-cell"
+			],
+			[
+				"displa",
+				"display-table"
+			],
+			[
+				"ver",
+				"vertical-align-middle"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"bordr",
+				"border-radius"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"button",
+				"button-row\t(custom.css)"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"img",
+				"img\tTag"
+			],
+			[
+				"cl",
+				"class\tAttr"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"tit",
+				"title-div"
+			],
+			[
+				"col-",
+				"col-md-4"
+			],
+			[
+				"hidd",
+				"hidden-xs"
+			],
+			[
+				"x",
+				"visible-xs"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"vi",
+				"visible-xs"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"resu",
+				"result\t(style1.css)"
+			],
+			[
+				"header",
+				"header-banner"
+			],
+			[
+				"li",
+				"linebreak"
+			],
+			[
+				"pos",
+				"postalCode\t(index.html)"
+			],
+			[
+				"fn",
+				"firstName\t(index.html)"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"asset",
+				"assetClassArray"
+			],
+			[
+				"mean",
+				"meanPercentileArray"
+			],
+			[
+				"sp",
+				"spState"
+			],
+			[
+				"schoolD",
+				"schoolDuration1"
+			],
+			[
+				"num",
+				"numChildren"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"N",
+				"Number\t(index.html)"
+			],
+			[
+				"top",
+				"topAssum1"
+			],
+			[
+				"persona",
+				"personalDetails"
+			],
+			[
+				"pens",
+				"pensionDrawdown"
+			],
+			[
+				"sec",
+				"second-row-mobile"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"boe",
+				"border-radius"
+			],
+			[
+				"is",
+				"isToush\t(index.html)"
+			],
+			[
+				"ng",
+				"ng-click"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"pdding",
+				"padding-bottom"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"nr",
+				"nrp"
+			],
+			[
+				"tra",
+				"translateX()"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"sublimelinter lint mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 224.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/oodles/advisorDashboard/assets/stylesheets/custom-green.sublime-project",
+		"/home/oodles/advisorDashboard/assets/stylesheets/custom2-green.css",
+		"/home/oodles/advisorDashboard/index.html",
+		"/home/oodles/advisorDashboard/assets/javascripts/app.js",
+		"/home/oodles/advisorDashboard/assets/javascripts/controller.js",
+		"/home/oodles/advisorDashboard/i.html",
+		"/home/oodles/advisorDashboard/u.html",
+		"/home/oodles/advisorDashboard/assets/stylesheets/custom-green.css",
+		"/home/oodles/advisorDashboard/assets/javascripts/scripts.js",
+		"/home/oodles/AssetAllocationCalculator/index.html",
+		"/home/oodles/AssetAllocationCalculator/js/hc/lineChartService.js",
+		"/home/oodles/AssetAllocationCalculator/js/controller.js",
+		"/home/oodles/privateSchoolFeeCalculator/js/hc/sand-signika.js",
+		"/home/oodles/privateSchoolFeeCalculator/js/calc.js",
+		"/home/oodles/INS-ADE-API/indexHTP.ejs",
+		"/home/oodles/Desktop/Downloads/html-docx-js-master/dist/html-docx.js",
+		"/home/oodles/Desktop/Downloads/html-docx-js-master/test/sample.html",
+		"/home/oodles/incomeTaxCalculator/index.html",
+		"/home/oodles/incomeTaxCalculator/js/controller.js",
+		"/home/oodles/incomeTaxCalculator/css/custom.css",
+		"/home/oodles/incomeTaxCalculator/images/client-logo.png",
+		"/home/oodles/incomeTaxCalculator/js/logo.png",
+		"/home/oodles/SuperFundFeeComparison/js/original.js",
+		"/home/oodles/SuperFundFeeComparison/js/canvg.min.js",
+		"/home/oodles/INS-ADE-API/README.md",
+		"/home/oodles/INS-ADE-API/package.json",
+		"/home/oodles/SuperFundFeeComparison/js/controller.js",
+		"/home/oodles/INS-ADE-API/js/controllerSFC.js",
+		"/home/oodles/INS-ADE-API/js/hcRA/chartService.js",
+		"/home/oodles/INS-ADE-API/js/hcTTR/chartService.js",
+		"/home/oodles/INS-ADE-API/js/AgeCalculatorService.js",
+		"/home/oodles/retirementPrototype-green/js/PdfMaker.js",
+		"/home/oodles/insurancePrototype-green/css/custom-green.css",
+		"/home/oodles/insurancePrototype-green/js/hc/sand-signika.js",
+		"/home/oodles/insurancePrototype-green/js/hc/chartService.js",
+		"/home/oodles/Desktop/Downloads/yum",
+		"/home/oodles/retirementPrototype-green/js/hc/AreaChartService.js",
+		"/home/oodles/retirementPrototype/js/controller.js",
+		"/home/oodles/retirementPrototype/css/custom-green.css",
+		"/home/oodles/retirementPrototype/css/custom2-green.css",
+		"/home/oodles/retirementPrototype/css/custom-orange.css",
+		"/home/oodles/retirementPrototype/css/custom-blue.css",
+		"/home/oodles/retirementPrototype/css/custom.css",
+		"/home/oodles/retirementPrototype/css/custom2-blue.css",
+		"/home/oodles/retirementPrototype/css/custom2-orange.css",
+		"/home/oodles/retirementPrototype/css/custom2.css",
+		"/home/oodles/retirementPrototype/js/hc/chartService.js",
+		"/home/oodles/retirementPrototype/js/hc/sand-signika.js",
+		"/home/oodles/retirementPrototype/js/hc/AreaChartService.js",
+		"/home/oodles/retirementPrototype/js/hc/donutChartService.js",
+		"/home/oodles/New Design/style1.css",
+		"/home/oodles/New Design/style.css",
+		"/home/oodles/New Design/amit.html",
+		"/home/oodles/prototypeCalculator/index.html",
+		"/home/oodles/New Design/index.html",
+		"/home/oodles/New Design/faltu.js",
+		"/home/oodles/AssetAllocationCalculator/css/custom.css",
+		"/home/oodles/AssetAllocationCalculator/js/hc/sand-signika.js",
+		"/home/oodles/AssetAllocationCalculator/js/PdfMaker.js",
+		"/home/oodles/AssetAllocationCalculator/data.js",
+		"/home/oodles/AssetAllocationCalculator/js/app.js",
+		"/home/oodles/node practice/others/example.js",
+		"/home/oodles/node practice/router/user.js",
+		"/home/oodles/node practice/app/calc.js",
+		"/home/oodles/node practice/index.js",
+		"/home/oodles/node practice/app/index.js",
+		"/home/oodles/privateSchoolFeeCalculator/index.html",
+		"/home/oodles/privateSchoolFeeCalculator/js/controller.js",
+		"/home/oodles/privateSchoolFeeCalculator/css/custom.css",
+		"/home/oodles/privateSchoolFeeCalculator/js/app.js",
+		"/home/oodles/privateSchoolFeeCalculator/js/PdfMaker.js",
+		"/home/oodles/privateSchoolFeeCalculator/js/SGCRateCalculator.js",
+		"/home/oodles/TTR/js/hc/sand-signika.js",
+		"/home/oodles/SuperFundFeeComparison/js/hc/highcharts.js",
+		"/home/oodles/AssetAllocationCalculator/multiple-select-master/demos/index.html",
+		"/home/oodles/privateSchoolFeeCalculator/array.js",
+		"/home/oodles/RetirementAdequacy/js/PdfMaker.js",
+		"/home/oodles/RetirementAdequacy/js/controller.js",
+		"/home/oodles/RetirementAdequacy/js/hc/AreaChartService.js",
+		"/home/oodles/RetirementAdequacy/js/hc/chartService.js",
+		"/home/oodles/RetirementAdequacy/index.html",
+		"/home/oodles/RetirementAdequacy/js/SGCRateCalculator.js",
+		"/home/oodles/RetirementAdequacy/css/custom.css",
+		"/home/oodles/RetirementAdequacy/js/WithoutSSCalculatorService.js",
+		"/home/oodles/RetirementAdequacy/js/WithSSCalculatorService.js",
+		"/home/oodles/SuperFundFeeComparison/js/array.js",
+		"/home/oodles/Downloads/html-to-pdf/index.html",
+		"/home/oodles/TTR/js/WithSSCalculatorService.js",
+		"/home/oodles/TTR/js/controller.js",
+		"/home/oodles/insuranceAdequacy/js/app.js",
+		"/home/oodles/insuranceAdequacy/js/AgeCalculatorService.js",
+		"/home/oodles/insuranceAdequacy/css/custom.css",
+		"/home/oodles/insuranceAdequacy/js/controller.js",
+		"/home/oodles/SSO-Calculator/index.html",
+		"/home/oodles/SSO-Calculator/js/controller.js",
+		"/home/oodles/SSO-Calculator/js/app.js",
+		"/home/oodles/SSO-Calculator/css/custom.css",
+		"/home/oodles/SSO-Calculator/js/ChartService.js",
+		"/home/oodles/SSO-Calculator/js/hc/donutChartService.js",
+		"/home/oodles/SSO-Calculator/js/hc/chartService.js",
+		"/home/oodles/TTR/js/hc/donutChartService.js",
+		"/home/oodles/TTR/js/hc/chartService.js",
+		"/home/oodles/TTR/js/WithoutSSCalculatorService.js",
+		"/home/oodles/TTR/css/custom.css",
+		"/home/oodles/SSO-Calculator/js/hc/dark-unica.js",
+		"/home/oodles/SSO-Calculator/js/hc/sand-signika.js",
+		"/home/oodles/SSO-Calculator/js/WithoutSSCalculatorService.js",
+		"/home/oodles/SSO-Calculator/js/highchart.js",
+		"/home/oodles/SSO-Calculator/js/TaxRateCalculatorService.js",
+		"/home/oodles/SSO-Calculator/js/WithSSCalculatorService.js",
+		"/home/oodles/TTR/js/AgeCalculatorService.js",
+		"/home/oodles/TTR/css/print.css",
+		"/home/oodles/TTR/js/app.js",
+		"/home/oodles/TTR/js/SGCRateCalculator.js",
+		"/home/oodles/TTR/js/TaxRateCalculatorService.js",
+		"/home/oodles/TTR/html/index.html",
+		"/home/oodles/TTR/js/custom.js",
+		"/home/oodles/TTR/css/bootstrap.min.css",
+		"/home/oodles/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ng-app",
+			"TTRApp",
+			"owl.carousel",
+			"owl",
+			"portfolioListOb",
+			"schoolObject",
+			"schoolObjects",
+			"controller.js:254",
+			",",
+			"$",
+			"James Ruse Agricultural High School",
+			"$",
+			",",
+			"your spouse would like to",
+			"of the property you want",
+			"The Event Of Death,",
+			"containerR",
+			"controller.js:376",
+			"}",
+			"controller.js:323",
+			"%",
+			",",
+			"qsuper",
+			"chartOneOpen",
+			"c1Name",
+			"name",
+			"majorFeesArray",
+			"majorFeesListObj",
+			"FV",
+			"PV",
+			"numChildren",
+			"])",
+			"school1",
+			"Which School ",
+			"Which School is your child attending?",
+			"Which school is your child attending?",
+			"var ",
+			"0.04",
+			"FV",
+			"Beginning of the year of analysis",
+			"childSchoolArray",
+			"schoolYear1",
+			"PV",
+			"spState",
+			"Sydney Girls High School",
+			"which school will your child be enrolled at?",
+			"Which School is your child attending?",
+			"School is your child",
+			"How many years your child is going to study at the school (before University)?",
+			"From which year your child will be attending school?",
+			"Is your child currently studying?",
+			"convertImagesToBase64",
+			"Goals Based Advice.",
+			"Why my advice is appropriate to you",
+			"0",
+			"255",
+			"Section Two:",
+			"0",
+			"640",
+			"array8",
+			"570",
+			"array6_2",
+			"splitTitle37",
+			"splitTitle38",
+			"splitTitle34",
+			"Your Personal Details",
+			"Your\nPersonal\nDetails",
+			"130",
+			"doc.setFontSize(9)",
+			"9",
+			"400",
+			"500",
+			"doc.setFontSize",
+			"columnsHeading",
+			"columnsValues",
+			"array2",
+			"62",
+			"0",
+			"arial",
+			"i2_1",
+			"i2",
+			"columnsHeading",
+			"Total Percentage Selected",
+			"asset2TotalSlider",
+			"asset2TotalCalculator",
+			"internationalListedProperty2",
+			"internationalListedProperty1",
+			"asset1Total",
+			"asset1TotalCalculator",
+			"International Listed Property",
+			"ageinp",
+			"International Listed Property",
+			"australianShares1",
+			"Do you want to change your asset allocation during the investment period?",
+			"dateArray",
+			"discou",
+			"tempFundA",
+			"$scope.fundA",
+			"superBalance",
+			"balanceArray",
+			"fundFee",
+			"annualPercentageFee",
+			"contributionFee",
+			"replaceAll(",
+			"contributionFee",
+			"annualFee",
+			"Annual Percentage Fee",
+			"Insurance Premium per year",
+			"Annual Percentage Fee",
+			"ws3",
+			"netReturn",
+			"netReturnSlider",
+			"$scope.fundB",
+			"fundsOb",
+			"annualPercentageFee",
+			"fundsOb",
+			"fundFee",
+			"fundCalculation",
+			"netReturn",
+			"Net Return Rate For Comparison",
+			"$scope.fundA",
+			"annualFeeA",
+			"k5",
+			"k6",
+			"1+0.03",
+			"inflation",
+			"k5",
+			"localhost"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"privateSchoolObjects",
+			"",
+			"\",\"",
+			"",
+			"},",
+			"",
+			"\",\"",
+			"",
+			"Which school will your child be enrolled at?",
+			"which school will your child be enrolled at?",
+			"How many years will your child attend school?",
+			"Which year will you enrol your child in school?",
+			"Is your child currently enrolled in school?",
+			"255",
+			"0",
+			"720",
+			"675",
+			"array9",
+			"array10",
+			"610",
+			"array7",
+			"320",
+			"doc.setFontSize(10)",
+			"450",
+			"400",
+			"array3",
+			"50",
+			"255",
+			"asset2Total",
+			"asset1Total",
+			"indirectCostRation",
+			"adminFee",
+			"contributionFee",
+			"netReturn",
+			"180.151.85.194",
+			"",
+			"var ",
+			"raObj",
+			"",
+			"Spouse =",
+			"",
+			"raObj",
+			"ageLTemp",
+			"ddBaseTemp",
+			"minPensionTemp",
+			"pensionStartTemp",
+			"retirementAgeTemp",
+			"insurancePremiumTemp",
+			"fixedFeeTemp",
+			"salarySacrificeTemp",
+			"variableFeeTemp",
+			"investmentReturnTemp",
+			"inflationTemp",
+			"wageIncreaseTemp",
+			"superBalanceTemp",
+			"annualSalaryTemp",
+			"hcRA",
+			"$scope.calculateFinalR",
+			"Trauma",
+			"IP",
+			"TPD",
+			"ecTr",
+			"ecI",
+			"ecT",
+			"ecL",
+			"tempResult",
+			"ecTr",
+			"ecI",
+			"ecT",
+			"trauma",
+			"IP",
+			"TPD",
+			"Insurance Adequacy",
+			"ecTrauma",
+			"ecIP",
+			"ecTPD",
+			"ecLife",
+			"5",
+			"7",
+			"5",
+			"7",
+			"",
+			"350px",
+			"",
+			"3",
+			"alterYear",
+			"))/100;",
+			"2",
+			"5",
+			"",
+			"2",
+			"",
+			"2",
+			"internationalListedProperty1",
+			"australianListedProperty1",
+			"cash1",
+			"internationalBondsHedged1",
+			"australianBonds1",
+			"usShares1",
+			"internationalSharesHedged1",
+			"internationalShares1",
+			",",
+			"final",
+			"",
+			"];",
+			"final",
+			"finalArray",
+			"",
+			"accountSpouse",
+			"otherAssets",
+			"account",
+			"",
+			"YUMMM",
+			"",
+			"col-xs-6 col-md-4",
+			"col-xs-6 col-md-3",
+			"col-xs-offset-6 col-xs-6 col-md-4 err-div",
+			"col-xs-6 col-md-4",
+			"col-xs-4 col-md-4",
+			"col-xs-6 col-md-4",
+			"col-xs-6 col-md-3",
+			"col-sm-5",
+			"col-md-3 col-sm-3",
+			"col-md-4 col-sm-4",
+			"col-md-3 col-sm-3",
+			"col-sm-5",
+			"",
+			".result-summary"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "custom-green.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 422.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
