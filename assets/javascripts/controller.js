@@ -326,7 +326,6 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.fundNameA = "Fund A";
     $scope.fundNameB = "Fund B";
 
-    console.log("sadgggggggga");
     var minDrawdown;
     $scope.listOb = [{ id: 0, name: "Minimum Pension Only" },
         { id: 1, name: "Choose you own pension" }
