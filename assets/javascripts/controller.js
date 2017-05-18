@@ -577,7 +577,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         { id: 2, name: "Growth Ambitious" }
     ];
 
-    scope.c1Name = "Max";
+    $scope.c1Name = "Max";
     $scope.c2Name = "Monica";
     $scope.c3Name = "Adele";
     $scope.c4Name = "Rita";
@@ -742,9 +742,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     $scope.schoolDuration4 = 6;
     $scope.schoolYear5 = initDate.getFullYear();
     $scope.schoolDuration5 = 6;
-    $scope.schoolYear6 = initDate.getFullYear();
-    $scope.schoolDuration6 = 6;
-    $scope.endYearInvestment = Number($scope.schoolYear2) + Number($scope.schoolDuration2)
+   /* $scope.schoolYear6 = initDate.getFullYear();
+    $scope.schoolDuration6 = 6;*/
+    $scope.endYearInvestment = Number($scope.schoolYear2) + Number($scope.schoolDuration2);
 
     var begnYearInvestmentSlider = document.getElementById("begnYearInvestmentSlider"),
         contStartYearSlider = document.getElementById("contStartYearSlider"),
@@ -759,9 +759,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         schoolYear4Slider = document.getElementById("schoolYear4Slider"),
         schoolDuration4Slider = document.getElementById("schoolDuration4Slider"),
         schoolYear5Slider = document.getElementById("schoolYear5Slider"),
-        schoolDuration5Slider = document.getElementById("schoolDuration5Slider"),
-        schoolYear6Slider = document.getElementById("schoolYear6Slider"),
-        schoolDuration6Slider = document.getElementById("schoolDuration6Slider");
+        schoolDuration5Slider = document.getElementById("schoolDuration5Slider");
+        // schoolYear6Slider = document.getElementById("schoolYear6Slider"),
+        // schoolDuration6Slider = document.getElementById("schoolDuration6Slider");
 
     var begnYearInvestmentInput = document.getElementById("begnYearInvestmentInput"),
         contStartYearInput = document.getElementById("contStartYearInput"),
@@ -776,13 +776,13 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         schoolYear4Input = document.getElementById("schoolYear4Input"),
         schoolDuration4Input = document.getElementById("schoolDuration4Input"),
         schoolYear5Input = document.getElementById("schoolYear5Input"),
-        schoolDuration5Input = document.getElementById("schoolDuration5Input"),
-        schoolYear6Input = document.getElementById("schoolYear6Input"),
-        schoolDuration6Input = document.getElementById("schoolDuration6Input");
+        schoolDuration5Input = document.getElementById("schoolDuration5Input");
+        // schoolYear6Input = document.getElementById("schoolYear6Input"),
+        // schoolDuration6Input = document.getElementById("schoolDuration6Input");
 
     noUiSlider.create(begnYearInvestmentSlider, {
         start: $scope.begnYearInvestment,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [$scope.endYearInvestment],
@@ -795,7 +795,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(contStartYearSlider, {
         start: $scope.contStartYear,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [$scope.endYearInvestment],
@@ -808,10 +808,10 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(numChildrenSlider, {
         start: $scope.numChildren,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
-            max: [6]
+            max: [5]
         },
         step: 1,
         format: wNumb({
@@ -831,12 +831,12 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
             prefix: '$',
             thousand: ','
         }),
-        connect: 'lower'
+        connect: [false, false]
     });
 
     noUiSlider.create(schoolYear1Slider, {
         start: $scope.schoolYear1,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -850,7 +850,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolYear2Slider, {
         start: $scope.schoolYear2,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -864,7 +864,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolYear3Slider, {
         start: $scope.schoolYear3,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -878,7 +878,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolYear4Slider, {
         start: $scope.schoolYear4,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -892,7 +892,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolYear5Slider, {
         start: $scope.schoolYear5,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -904,9 +904,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     });
 
-    noUiSlider.create(schoolYear6Slider, {
+    /*noUiSlider.create(schoolYear6Slider, {
         start: $scope.schoolYear6,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [initDate.getFullYear()],
             max: [2050]
@@ -916,11 +916,11 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
             decimals: 0
         })
 
-    });
+    });*/
 
     noUiSlider.create(schoolDuration1Slider, {
         start: $scope.schoolDuration1,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -934,7 +934,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolDuration2Slider, {
         start: $scope.schoolDuration2,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -948,7 +948,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolDuration3Slider, {
         start: $scope.schoolDuration3,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -962,7 +962,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolDuration4Slider, {
         start: $scope.schoolDuration4,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -976,7 +976,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     noUiSlider.create(schoolDuration5Slider, {
         start: $scope.schoolDuration5,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -988,9 +988,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     });
 
-    noUiSlider.create(schoolDuration6Slider, {
+    /*noUiSlider.create(schoolDuration6Slider, {
         start: $scope.schoolDuration6,
-        connect: 'lower',
+        connect: [false, false],
         range: {
             min: [1],
             max: [14]
@@ -999,7 +999,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         format: wNumb({
             decimals: 0
         })
-    });
+    });*/
 
 
     begnYearInvestmentSlider.noUiSlider.on('update', function(values, handle) {
@@ -1046,11 +1046,9 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
     function changeChildrenInputs(num) {
         for (var i = 1; i <= num; i++) {
             document.getElementsByClassName("c" + i)[0].style.display = 'block';
-            document.getElementsByClassName("h" + i)[0].style.display = 'block';
         }
-        for (var i = (num + 1); i <= 6; i++) {
+        for (var i = (num + 1); i <= 5; i++) {
             document.getElementsByClassName("c" + i)[0].style.display = 'none';
-            document.getElementsByClassName("h" + i)[0].style.display = 'none';
         }
     }
 
@@ -1059,6 +1057,8 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         $scope.investmentReturn = values[handle];
     });
     investmentReturnSlider.noUiSlider.on('set', function(values, handle) {
+        investmentReturnInput.value = values[handle];
+        $scope.investmentReturn = (values[handle]);
         //calculate();
         $timeout(0);
     });
@@ -1142,7 +1142,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         schoolYear5Slider.noUiSlider.set(schoolYear5Input.value);
     });
 
-    schoolYear6Slider.noUiSlider.on('update', function(values, handle) {
+    /*schoolYear6Slider.noUiSlider.on('update', function(values, handle) {
         schoolYear6Input.value = values[handle];
         $scope.schoolYear6 = values[handle];
     });
@@ -1155,7 +1155,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     schoolYear6Input.addEventListener("change", function() {
         schoolYear6Slider.noUiSlider.set(schoolYear6Input.value);
-    });
+    });*/
 
     schoolDuration1Slider.noUiSlider.on('update', function(values, handle) {
         schoolDuration1Input.value = values[handle];
@@ -1232,7 +1232,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         schoolDuration5Slider.noUiSlider.set(schoolDuration5Input.value);
     });
 
-    schoolDuration6Slider.noUiSlider.on('update', function(values, handle) {
+    /*schoolDuration6Slider.noUiSlider.on('update', function(values, handle) {
         schoolDuration6Input.value = values[handle];
         $scope.schoolDuration6 = values[handle];
     });
@@ -1245,7 +1245,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
 
     schoolDuration6Input.addEventListener("change", function() {
         schoolDuration6Slider.noUiSlider.set(schoolDuration6Input.value);
-    });
+    });*/
 
     $scope.studyingOption1Change = function(studying1) {
         $scope.studyingOption1 = studying1;
@@ -1307,7 +1307,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         //calculate();
         $timeout(0);
     }
-    $scope.studyingOption6Change = function(studying6) {
+    /*$scope.studyingOption6Change = function(studying6) {
         $scope.studyingOption6 = studying6;
         if (studying6) {
             schoolYear6Input.value = $scope.begnYearInvestment;
@@ -1318,7 +1318,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         }
         //calculate();
         $timeout(0);
-    }
+    }*/
 
     function changeMax(tempEndYear) {
         var numChildren = Number($scope.numChildren);
@@ -1332,11 +1332,15 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         var schoolDuration4 = Number($scope.schoolDuration4);
         var schoolYear5 = Number($scope.schoolYear5);
         var schoolDuration5 = Number($scope.schoolDuration5);
-        var schoolYear6 = Number($scope.schoolYear6);
+        /*var schoolYear6 = Number($scope.schoolYear6);
         var schoolDuration6 = Number($scope.schoolDuration6);
         var childSchoolArray = [schoolYear1, schoolYear2, schoolYear3, schoolYear4, schoolYear5, schoolYear6];
         var childDurationArray = [schoolDuration1, schoolDuration2, schoolDuration3, schoolDuration4, schoolDuration5, schoolDuration6];
-        var childGradArray = [$scope.schoolEnd1, $scope.schoolEnd2, $scope.schoolEnd3, $scope.schoolEnd4, $scope.schoolEnd5, $scope.schoolEnd6];
+        var childGradArray = [$scope.schoolEnd1, $scope.schoolEnd2, $scope.schoolEnd3, $scope.schoolEnd4, $scope.schoolEnd5, $scope.schoolEnd6];*/
+
+        var childSchoolArray = [schoolYear1, schoolYear2, schoolYear3, schoolYear4, schoolYear5];
+        var childDurationArray = [schoolDuration1, schoolDuration2, schoolDuration3, schoolDuration4, schoolDuration5];
+        var childGradArray = [$scope.schoolEnd1, $scope.schoolEnd2, $scope.schoolEnd3, $scope.schoolEnd4, $scope.schoolEnd5];
 
         for (i = 0; i < numChildren; i++) {
             childGradArray[i] = childSchoolArray[i] + childDurationArray[i] - 1;
@@ -2194,7 +2198,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         connect: [false, false]
     });
 
-    noUiSlider.create(numChildrenSlider, {
+    /*noUiSlider.create(numChildrenSlider, {
         start: [$scope.numChildren],
         range: {
             'min': [0],
@@ -2205,7 +2209,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
             decimals: 0,
         }),
         connect: [false, false]
-    });
+    });*/
 
     noUiSlider.create(sickLeavesSlider, {
         start: [$scope.sickLeaves],
@@ -4032,7 +4036,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
         connect: [false, false]
     });
 
-    noUiSlider.create(investmentReturnSlider, {
+    /*noUiSlider.create(investmentReturnSlider, {
         start: [$scope.investmentReturn],
         range: {
             'min': [0],
@@ -4044,7 +4048,7 @@ app.controller("TTRController", ['$scope', '$rootScope','$timeout', 'AgeCalculat
             postfix: '%',
         }),
         connect: [false, false]
-    });
+    });*/
 
     noUiSlider.create(variableFeeSlider, {
         start: [$scope.variableFee],
